@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEATHER APP</title>
+  <link rel="stylesheet" href="Nishant_Jaiswal_2408972.css">
+  <script src="https://kit.fontawesome.com/d3b53606f4.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3b53606f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+
+  <!-- Pop-up window for past 7 days data -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+   <button onclick="closePopup()"><span class="close">&times;</span></button> 
+    <h2>Past 7 Days Data</h2>
+      <div class="#1">
+        <p class="day">Monday</p>
+        <p class="date">18 December</p>
+        <p class="temp"><i class="fa-solid fa-temperature-three-quarters fa-1x"></i>18°C</p>
+        <p class="pressure"><i class="fa-solid fa-gauge fa-1x"> </i></p>
+        <img src="" alt="Image 1">
+      </div>
+      <div class="#2">
+        <p class="day">Monday</p>
+        <p class="date">18 December</p>
+        <p class="temp"><i class="fa-solid fa-temperature-three-quarters fa-1x"></i>18°C</p>
+        <p class="pressure"><i class="fa-solid fa-gauge fa-1x"></i></p>
+        <img src="" alt="Image 2">
+      </div>
+      <div class="#3">
+        <p class="day">Monday</p>
+        <p class="date">18 December</p>
+        <p class="temp"><i class="fa-solid fa-temperature-three-quarters fa-1x"></i>18°C</p>
+        <p class="pressure"><i class="fa-solid fa-gauge fa-1x"></i> 1000pa</p>
+        <img src="" alt="Image 3">
+      </div>
+      <div class="#4">
+        <p class="day">Monday</p>
+        <p class="date">18 December</p>
+        <p class="temp"><i class="fa-solid fa-temperature-three-quarters fa-1x"></i>18°C</p>
+        <p class="pressure"><i class="fa-solid fa-gauge fa-1x"></i></p>
+        <img src="" alt="Image 4">
+      </div>
+      <div class="#5">
+        <p class="day">Monday</p>
+        <p class="date">18 December</p>
+        <p class="temp"><i class="fa-solid fa-temperature-three-quarters fa-1x"></i>18°C</p>
+        <p class="pressure"><i class="fa-solid fa-gauge fa-1x"></i></p>
+        <img src="" alt="Image 5">
+      </div>
+      <div class="#6">
+        <p class="day">Monday</p>
+        <p class="date">18 December</p>
+        <p class="temp"><i class="fa-solid fa-temperature-three-quarters fa-1x"></i>18°C</p>
+        <p class="pressure"><i class="fa-solid fa-gauge fa-1x"></i></p>
+        <img src="" alt="Image 6">
+      </div>
+      <div class="#7">
+        <p class="day">Monday</p>
+        <p class="date">18 December</p>
+        <p class="temp"><i class="fa-solid fa-temperature-three-quarters fa-1x"></i>18°C</p>
+        <p class="pressure"><i class="fa-solid fa-gauge fa-1x"></i></p>
+        <img src="" alt="Image 7">
+      </div>
+    </div>
+</div>
+
+<div class="container">
+  <h3>WEATHER</h3>
+  <!-- search barr -->
+  <button class="sar"  type="submit" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+  <button class="view_previous">View last 7 days</button>
+<input type="text" class="search_bar" id="search_bar" placeholder="CITY NAME.." required>
+
+<div class="location"><i class="fa-solid fa-location-dot"></i> <p class="city">KATHMANDU</p> &nbsp;</div>
+
+
+
+  <!-- yeta side-bar ko content haru  -->
+  <div class="sidebar">
+<h1 class="temps">18°C</h1>
+<p class="dates"><br>&nbsp;&nbsp; <span class="day">Monday</span>, <span class="month">18 December</span>  | <span class="time">8:15</span></p>
+<br>
+<br>
+<div class="cities">
+<p> &nbsp; Wind Speed<br> &nbsp;<span class="winds">10 km/h</span></p>
+<p> &nbsp; Min Temperature <br> &nbsp;<span class="winds">10 km/h</span></p>
+<p> &nbsp; Max Temperature<br> &nbsp;<span class="winds">10 km/h</span></p>
+</div>
+<div class="horizontal-line"></div>
+<p style="text-align: center; color: white; font-size:16px;">Forecast of the next few days</p>
+<div class="forcast">
+  <button class="active" onclick="days4()" >4 DAYS</button>
+  <button onclick="showdis()" >14 DAYS</button>
+  <button onclick="days30()">30 DAYS</button>
+</div>
+
+<!-- 4 DAYS FORECAST -->
+<div class="hiddencontent">
+ <p class="st">
+  <i id="day1" class="fa-solid fa-cloud-rain fa-2x"></i> <span class="day1">loading...</span>
+ </p>
+
+ 
+ <p class="st">
+  <i class="fa-solid fa-cloud-rain"></i> <span class="day2">loading...</span>
+  </p>
+
+ <p class="st">
+  <i class="fa-solid fa-cloud-rain"></i> <span class="day3">loading...</span>
+ </p>
+  
+ <p class="st">
+  <i class="fa-solid fa-cloud-rain"></i> <span class="day4">loading.....</span>
+ </p> 
+   
+ 
+</div>
+<!-- 14 DAYS FORECAST -->
+
+<div class="hiddencontent_1">
+  <p class="a">
+   <i class="fa-solid fa-cloud-rain"></i>  <span class="day5">loading...</span>
+  </p> 
+  
+   <p class="b">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day6">loading...</span>
+   </p>
+ 
+   <p class="c">
+     <i class="fa-solid fa-cloud-rain"></i>  <span class="day7">loading...</span>
+    </p>
+    <p class="d">
+     <i class="fa-solid fa-cloud-rain"></i>  <span class="day8">loading...</span>
+    </p>
+    <p class="e">
+     <i class="fa-solid fa-cloud-rain"></i>  <span class="day9">loading...</span>
+    </p>
+    <p class="f">
+     <i class="fa-solid fa-cloud-rain"></i>  <span class="day10">loading...</span>
+    </p>
+    <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day11">loading...</span>
+   </p>
+   <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day12">loading...</span>
+   </p><p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day13">loading...</span>
+   </p><p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day14">loading...</span>
+   </p>
+  
+ </div>
+
+<!-- 30 DAYS FORECAST -->
+ <div class="
+ hiddencontent_2">
+  <p class="a">
+   <i class="fa-solid fa-cloud-rain"></i>  <span class="day15">loading...</span>
+  </p> 
+  
+   <p class="b">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day16">loading...</span>
+   </p>
+ 
+   <p class="c">
+     <i class="fa-solid fa-cloud-rain"></i>  <span class="day17">loading...</span>
+    </p>
+    <p class="d">
+     <i class="fa-solid fa-cloud-rain"></i> <span class="day18">loading...</span>
+    </p>
+    <p class="e">
+     <i class="fa-solid fa-cloud-rain"></i>  <span class="day19">loading...</span>
+    </p>
+    <p class="f">
+     <i class="fa-solid fa-cloud-rain"></i>  <span class="day20">loading...</span>
+    </p>
+    <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day21">loading...</span>
+   </p>
+   <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day22">loading...</span>
+   </p>
+   <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day23">loading...</span>
+   </p>
+   <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day24">loading...</span>
+   </p>
+   <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i> <span class="day25">loading...</span>
+   </p>
+   <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i> <span class="day26">loading...</span>
+   </p>
+   <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day27">loading...</span>
+   </p>
+   <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day28">loading...</span>
+   </p>
+   <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day29">loading...</span>
+   </p>
+   <p class="g">
+    <i class="fa-solid fa-cloud-rain"></i>  <span class="day30">loading...</span>
+   </p>
+
+  
+ </div>
+
+
+  </div>
+
+  <!-- ya bata container bhitra ko part  -->
+
+
+  <div class="datass">
+    <h1>Mostly cloudy with a high chance of rain</h1>
+    </div>
+  
+
+<!-- baaki ko content haru -->
+
+<div class="weather">
+  <p>
+    <span class="feel">Feels like</span>
+    <i class="fa-solid fa-temperature-three-quarters fa-2x"></i> 
+    <span class="feels">Feels like</span>
+  </p>
+  <p>
+    <span class="feel">Gust</span>
+    <i class="fa-solid fa-wind fa-2x"></i>
+    <span class="feels" id="gust">Loading..</span>
+  </p>
+  <p>
+    <span class="feel">Sea Level</span>
+    <i class="fa-solid fa-water fa-2x"></i>
+    <span class="feels" id="sea">Loading..</span>
+  </p>
+  <p>
+    <span class="feel">Humidity</span>
+    <i class="fa-solid fa-droplet fa-2x"></i>
+    <span class="feels" id="humi">Loading..</span>
+  </p>
+  <p>
+    <span class="feel">Pressure</span>
+    <i class="fa-solid fa-gauge fa-2x"></i>
+    <span class="feels" id="pressure">Loading..</span>
+  </p>
+  
+
+
+
+ 
+</div>
+
+
+
+<!-- weather icon  -->
+<div class="icons">
+  <img src=""  class="weat" srcset="">
+</div>
+
+
+</div>
+<!-- footer  -->
+<footer>
+ <p>&copy;All rights Reserved.Nishant Jaiswal</p> 
+</footer>
+
+  <script src="Nishant_Jaiswal_2408972.js"></script>
+</body>
+</html>
