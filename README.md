@@ -14,6 +14,6 @@ ALL Rights reserved.<i class="fas fa-copy"></i>
 
 ## Acknowledgments
 
-API used in this project - [OpenWeatherMap](https://openweathermap.org/api) 
-Hosting services - [Serv00](https://www.serv00.com/)
+API used in this project - [OpenWeatherMap](https://openweathermap.org/api) <br>
+Hosting services - [Serv00](https://www.serv00.com/)<br>
 Icons and Fonts from [google](https://fonts.google.com/) and [FontAwesome](https://fontawesome.com/)
