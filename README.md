@@ -9,7 +9,7 @@ Feel free use to this as an example to create your own weather appplication.
 
 ## License
 
-ALL Rights reserved.<i class="fas fa-copy"></i>
+&copy;ALL Rights reserved.
 
 
 ## Acknowledgments
