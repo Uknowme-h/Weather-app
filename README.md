@@ -2,7 +2,7 @@
 # WEATHER APP 
 
 This is a weather app. It includes various features such as displaying current weather information, a search bar to search for different cities, and a pop-up window to show past 7 days data. The app also provides a forecast for the next few days. It uses Font Awesome icons and Google Fonts for styling. The JavaScript file "app.js" is responsible for handling the app's functionality. <br>
-[live demo?](https://nishant-jswl.serv00.net/index.html){:target="_blank"}
+[live demo?](https://nishant-jswl.serv00.net/index.html)
 
 ## Usage
 
