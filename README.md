@@ -7,6 +7,7 @@ This is a weather app. It includes various features such as displaying current w
 ## Usage
 
 Feel free use to this as an example to create your own weather appplication.
+Contributions are most welcomed.
 
 ## License
 
